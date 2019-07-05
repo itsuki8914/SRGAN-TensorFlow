@@ -50,6 +50,48 @@ python convert.py
 * Validation Data Track 1 bicubic downscaling x4 (LR images)
 * Validation Data (HR images)
 
-(if your PC has enough RAM, I recommend also The flickr2K data set suggested in [EDSR.](https://github.com/LimBee/NTIRE2017))
+(If your PC has enough RAM, I recommend also The flickr2K data set proposed in [EDSR.](https://github.com/LimBee/NTIRE2017))
 
-  Put downloaded datasets.
+  Put the downloaded dataset in the train_lr, train_hr, val_lr and val_hr folders.
+  like this
+```
+...
+│
+├── train_lr
+│     ├── 0001x4.png
+│     ├── 0002x4.png
+│     ├── ...
+│     └── 0800x4.png
+├── train_hr
+│     ├── 0001.png
+│     ├── 0002.png
+│     ├── ...
+│     └── 0800.png 
+├── val_lr
+│     ├── 0801x4.png
+│     ├── 0802x4.png
+│     ├── ...
+│     └── 0900x4.png
+├── val_hr
+│     ├── 0801.png
+│     ├── 0802.png
+│     ├── ...
+│     └── 0900.png 
+├── main.py
+├── model.npy
+...
+```
+
+3. Train SRGAN.
+
+```
+python main.py
+```
+
+4. After training, inference can be performed.
+
+example:
+
+```
+python pred.py foldername
+```
