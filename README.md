@@ -101,7 +101,7 @@ python pred.py foldername
 
 leftmost: bicubic upsampling
 
-Second from left: SRResnet(MSE + VGG)
+Second from left: SRResNet(MSE + VGG)
 
 Third from left: SRGAN(MSE + VGG + GAN)
 
