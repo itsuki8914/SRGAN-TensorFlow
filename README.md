@@ -95,3 +95,15 @@ example:
 ```
 python pred.py foldername
 ```
+
+
+## Result examples
+
+leftmost: bicubic upsampling
+Second from left: SRResnet(MSE + VGG)
+Third from left: SRGAN(MSE + VGG + GAN)
+rightmost: original HR image
+
+<img src = 'examples/comic.png' >
+
+<img src = 'examples/lenna.png' >
