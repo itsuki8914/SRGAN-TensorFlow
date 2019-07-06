@@ -103,7 +103,7 @@ leftmost: bicubic upsampling
 
 Second from left: SRResNet(MSE + VGG)
 
-Third from left: SRGAN(MSE + VGG + GAN) (this implementation)
+Third from left: SRGAN(this implementation)
 
 rightmost: original HR image
 
