@@ -1,7 +1,9 @@
 # SRGAN-TensorFlow
-Implementation of SRGAN using Tensorflow
+Implementation of SRGAN using Tensorflow.
 
 original paper: https://arxiv.org/abs/1609.04802
+
+see also [my ESRGAN implementation.](https://github.com/itsuki8914/ESRGAN-TensorFlow)
 
 ## Usage 
 
