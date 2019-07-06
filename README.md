@@ -78,7 +78,7 @@ python convert.py
 │     ├── ...
 │     └── 0900.png 
 ├── main.py
-├── model.npy
+├── model.py
 ...
 ```
 
@@ -90,10 +90,29 @@ python main.py
 
 4. After training, inference can be performed.
 
+Put the images you want to evaluate into a folder and run the following.
+
 example:
+ ```
+ ...
+│
+├── main.py
+├── pred.py
+├── modelGAN
+│     ├── checkpoint
+│     ├── model.ckpt-50000
+│     ├── model.ckpt-50000
+│     └── model.ckpt-50000
+├── test
+│     ├── yourpic1.png
+│     ├── favpic.jpg
+│     ...
+│     └── smallpic.png
+...
+```
 
 ```
-python pred.py foldername
+python pred.py test
 ```
 
 
